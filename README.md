@@ -16,7 +16,7 @@ Tre quest da risolvere usando Cursor: un middleware di autenticazione rotto, un'
 ## Avvio rapido
 
 ```bash
-git clone https://github.com/<utente>/task-floometer.git
+# hai gia lo ZIP dalla community Telegram: scompattalo ed entra nella cartella
 cd task-floometer
 cp .env.example .env
 npm install
@@ -25,6 +25,8 @@ npm run dev
 ```
 
 L'app risponde su `http://localhost:3000`. Login demo: `ada@floometer.dev` / `floometer`.
+
+Il codice del lab si scarica come archivio ZIP dalla community Telegram: https://t.me/+cLTPwWMrBBc4YmJk
 
 Per ripartire da capo: `npm run db:reset && npm run db:seed`.
 
@@ -114,7 +116,7 @@ Cosa fare:
 1. **Cloud Agent**: aprire un Cloud Agent dal manuale, dargli come prompt: "leggi il repo, in particolare `src/routes/tasks.ts` e `src/routes/reports.ts`, scrivi una test suite Vitest+Supertest completa che copre tutti i casi 403, 409 e il caso 500 segnalato in `tests/quest-3-errors.test.ts`. Fai aprire una PR sul branch `quest-3/tests`".
 2. **Agent-First in locale**: aprire l'Agents Window e parallelizzare su tre task: (a) corretto burndown a 0 task, (b) corretto burndown con solo task archived, (c) review del diff del Cloud Agent in PR.
 3. Far girare `npm test` e ottenere verde su tutta la suite, incluso `quest-1-auth.test.ts` (ereditato dalla Quest 1).
-4. Documentare nel proprio fork la lezione: cosa il Cloud Agent ha fatto bene, cosa hai dovuto rifare a mano, dove e' stato il bottleneck di token.
+4. Documentare nel proprio repository la lezione in un file `LESSONS.md`: cosa il Cloud Agent ha fatto bene, cosa hai dovuto rifare a mano, dove e' stato il bottleneck di token.
 
 ### Definition of Done del laboratorio
 
@@ -123,8 +125,8 @@ Cosa fare:
 - `npm run dev` funziona: login con `ada@floometer.dev`, navigazione dei progetti, creazione di un task.
 - Una skill custom GitHub che importa almeno una issue reale.
 - Una PR aperta dal Cloud Agent con i test della Quest 3, mergeable.
-- README del proprio fork con un paragrafo "Lezioni dal lab" (3-5 punti).
+- Un `LESSONS.md` nel proprio repository con "Lezioni dal lab" (3-5 punti).
 
 ## Licenza
 
-MIT. Sentiti libero di forkare, smontare e rimontare. Se trovi un bug non intenzionale, apri una issue.
+MIT. Sentiti libero di smontare e rimontare. Se trovi un bug non intenzionale, segnalalo nella community Telegram.
